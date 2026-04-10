@@ -35,6 +35,19 @@ body {
     padding-top: 50px;
 }
 
+#mostrarProyecto{
+
+    scroll-margin-top: 100px;
+    margin-top: 100px;
+    margin: 0;
+}
+
+
+
+
+
+
+
 .primerTitulo{
 
         color: var(--color-texto);
@@ -50,7 +63,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 40px;                   /* Más espacio entre opciones da aire "premium" */
+    gap: 40px;                   /* Da espacio entre opciones  */
     margin-top: 25px;
     padding: 0;
     
@@ -86,6 +99,7 @@ body {
 }
 
 .segundaDivision{
+    scroll-margin-top: 100px;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -110,6 +124,7 @@ body {
 }
 
 .terceraDivision{
+    scroll-margin-top: 100px;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -134,6 +149,7 @@ body {
 }
 
 .cuartaDivision{
+    scroll-margin-top: 100px;
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -308,5 +324,10 @@ input:focus {
     padding: 15px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+}
+
+
+.descripcionfoto{
     color: var(--color-texto);
 }

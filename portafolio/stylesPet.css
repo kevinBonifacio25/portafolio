@@ -1,0 +1,142 @@
+
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 20px;
+}
+
+:root {
+    --color-fondo: #121212;      /* Negro profundo */
+    --color-caja: #1E1E1E;       /* Gris oscuro para el contenedor */
+    --color-texto: #E0E0E0;      /* Gris claro para que no canse la vista */
+    --color-acento: #00ADB5;     /* Cian tecnológico */
+}
+
+
+
+
+.primeraDivisionmascota{
+
+    background-color: var(--color-caja);
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    margin: 0;
+    border-radius: 15px;
+    
+   
+}
+
+.primerTitulomascota{
+
+        color: var(--color-texto);
+        width: 100%;
+        text-align:center;
+        text-decoration:underline;
+        font-size: 11px;
+        font-family:  Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+.menu-navegacionVolverInicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;                   /* Da espacio entre opciones  */
+    margin-top: 25px;
+    padding: 0;
+    
+}
+
+
+.menu-navegacionVolverInicio a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 14px;
+    letter-spacing: 2px;         /* Espaciado entre letras  */
+    text-transform: uppercase;   /* Todo en mayúsculas  */
+    transition: 0.4s;
+    position: relative;          
+
+}
+
+.menu-navegacionVolverInicio a:hover {
+    color: var(--color-acento);
+}
+
+.menu-navegacionVolverInicio a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-acento);
+    transition: width .3s;
+}
+
+.menu-navegacionVolverInicio a:hover::after {
+    width: 100%;
+}
+
+
+.menuVolverInicio {
+    position: -webkit-sticky !important;
+    position: sticky;   
+    top: 0;
+    width: 100%;        /* Con fixed es obligatorio definir el ancho */
+    background-color: #1E1E1E;
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    margin-top: 20px;
+    box-sizing: border-box; 
+    border-radius: 15px;
+}
+
+
+.galeriaCascadamascota {
+    position:static;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo de tu portafolio */
+    margin: 0 auto;   /* Centra la galería */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Una debajo de otra */
+    gap: 40px; /* Espacio entre cada foto */
+}
+
+.galeriaMascota {
+    width: 100%;
+    background:var(--color-caja); /* Opcional: un fondo suave */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.galeriaMascota img {
+    width: 100%;
+    height: auto; /* Que la foto use su altura natural para no cortarse */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto opcional: se agranda un poquito al pasar el mouse */
+.galeriaMascota img:hover {
+    transform: scale(1.02);
+}
+
+.galeriaMascota p {
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+}
+
+
+.descripcionfotoMascota{
+    color: var(--color-texto);
+}
